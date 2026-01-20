@@ -87,7 +87,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "viewPath": "com.ehsm.ehsmportal.view",
-                "controlId": "app",
+                "controlId": "appContainer",
                 "controlAggregation": "pages",
                 "async": true
             },
