@@ -21,10 +21,11 @@ sap.ui.define([
             var oModel = this.getOwnerComponent().getModel(); // Use default OData model
  
             // Construct the path for the Entity Read (Composite Key)
-            var sPath = oModel.createKey("/ZSM_EHSM_LOGIN_ODSet", {
+            var sKey = oModel.createKey("ZSM_EHSM_LOGIN_ODSet", {
                 EmployeeId: sEmpid,
                 Password: sPassword
             });
+            var sPath = "/" + sKey;
  
             oModel.read(sPath, {
                 success: function (oData) {
