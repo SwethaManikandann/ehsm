@@ -62,7 +62,11 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "com.ehsm.ehsmportal.i18n.i18n"
+                    "bundleName": "com.ehsm.ehsmportal.i18n.i18n",
+                    "supportedLocales": [
+                        "en"
+                    ],
+                    "fallbackLocale": "en"
                 }
             },
             "": {
@@ -87,7 +91,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "viewPath": "com.ehsm.ehsmportal.view",
-                "controlId": "appContainer",
+                "controlId": "app",
                 "controlAggregation": "pages",
                 "async": true
             },
